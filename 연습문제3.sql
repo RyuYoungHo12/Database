@@ -8,7 +8,7 @@ CREATE USER 'admin3'@'%' IDENTIFIED BY '1234';
 GRANT ALL PRIVILEGES ON College.* TO 'admin3'@'%';
 FLUSH PRIVILEGES;
 
-# 실습 3-2
+# 실습 3-2college
 CREATE TABLE `Student` (
 	`stdNo`		CHAR(8) PRIMARY KEY,
 	`stdName`	VARCHAR(20) NOT NULL,
@@ -43,13 +43,13 @@ INSERT INTO `Student` VALUES ('20201126', '강감찬','010-1234-1004',2,'서울�
 INSERT INTO `Student` VALUES ('20201126', '이순신','010-1234-1005',1,'부산시 부산진구');
 INSERT INTO `Student` VALUES ('20201126', '송상현','010-1234-1006',1,'부산시 동래구');
 
-INSERT INTO `lecNo` VALUES (159, '인지행동심리학', 3, 40, '본304');
-INSERT INTO `lecNo` VALUES (167, '운영체제론', 3, 25, '본B05');
-INSERT INTO `lecNo` VALUES (234, '중급 영문법', 3, 20, '본201');
-INSERT INTO `lecNo` VALUES (239, '세법개론', 3, 40, '본204');
-INSERT INTO `lecNo` VALUES (248, '빅데이터 개론', 3, 20, '본B01');
-INSERT INTO `lecNo` VALUES (253, '컴퓨팅사고와 코딩', 2, 10, '본B02');
-INSERT INTO `lecNo` VALUES (349, '사회복지 마케팅', 2, 50, '본301');
+INSERT INTO `Lecture` VALUES (159, '인지행동심리학', 3, 40, '본304');
+INSERT INTO `Lecture` VALUES (167, '운영체제론', 3, 25, '본B05');
+INSERT INTO `Lecture` VALUES (234, '중급 영문법', 3, 20, '본201');
+INSERT INTO `Lecture` VALUES (239, '세법개론', 3, 40, '본204');
+INSERT INTO `Lecture` VALUES (248, '빅데이터 개론', 3, 20, '본B01');
+INSERT INTO `Lecture` VALUES (253, '컴퓨팅사고와 코딩', 2, 10, '본B02');
+INSERT INTO `Lecture` VALUES (349, '사회복지 마케팅', 2, 50, '본301');
 
 INSERT INTO `Register` (`regStdNo`, `regLecNo`) VALUE (20201126,234);
 INSERT INTO `Register` (`regStdNo`, `regLecNo`) VALUE (20201026,248);
